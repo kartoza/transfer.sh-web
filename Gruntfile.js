@@ -263,6 +263,15 @@ module.exports = function (grunt) {
                     dest: '<%= yeoman.app %>/fonts/glyphicons',
                     src: ['*']
                 }]
+            },
+            scripts: {
+                files: [{
+                    expand: true,
+                    dot: true,
+                    cwd: '<%= yeoman.dist %>/{{.BaseURL}}/',
+                    dest: '<%= yeoman.dist %>',
+                    src: ['**/*']
+                }]
             }
         },
         concurrent: {

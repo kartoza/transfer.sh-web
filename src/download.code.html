@@ -13,12 +13,12 @@
     <meta name="description" content="Easy and fast file sharing from the command-line.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="{{.BaseURL}}/styles/main.css">
 
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:100,200,300' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:400' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
-    <!-- build:js scripts/vendor/modernizr.js -->
+    <!-- build:js {{.BaseURL}}/scripts/vendor/modernizr.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
 </head>
@@ -47,9 +47,9 @@
         <div class="wrapper">
             <h1>{{.Hostname}}</h1>
             <ul class="hidden-xs">
-                <li><a href="#samples">sample use cases</a>
+                <li><a href="{{.BaseURL}}#samples">sample use cases</a>
                 </li>
-                <li><a href="#contact">contact us</a>
+                <li><a href="{{.BaseURL}}#contact">contact us</a>
                 </li>
             </ul>
         </div>
@@ -87,7 +87,7 @@
         </div>
         <div id="overlay" class="overlay"></div>
     </div>
-        <script src="scripts/clipboard.js"></script>
+        <script src="{{.BaseURL}}/scripts/clipboard.js"></script>
 
 </section>
 
@@ -130,13 +130,13 @@
       }
     </script>
 
-        <!-- build:js scripts/main.js -->
+        <!-- build:js {{.BaseURL}}/scripts/main.js -->
         <script src="bower_components/jquery/dist/jquery.js"></script>
         <script src="bower_components/uri.js/src/URI.min.js"></script>
         <script src="bower_components/bootstrap/js/transition.js"></script>
         <script src="bower_components/bootstrap/js/collapse.js"></script>
-        <script src="/scripts/showdown.js"></script>
-        <script src="/scripts/main.js"></script>
+        <script src="scripts/showdown.js"></script>
+        <script src="scripts/main.js"></script>
         <!-- endbuild -->
         
     <script>
